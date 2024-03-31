@@ -30,6 +30,9 @@ if app_mode == 'Home':
 
 elif app_mode == 'Prediction':
 
+    csv=pd.read_csv("test.csv")
+    st.write(csv)
+
     st.subheader('Sir/Mme , YOU need to fill all neccesary informations in order to get a reply to your loan request !')
     st.sidebar.header("Informations about the client :")
     gender_dict = {"Male": 1, "Female": 2}
